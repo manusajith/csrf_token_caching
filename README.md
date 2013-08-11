@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/csrf_token_caching.png)](http://badge.fury.io/rb/csrf_token_caching)
+
 # CsrfTokenCaching
 
 One of the notable features of Rails is the use of CSRF (Cross Site Request Forgery). The CSRF token is implemented by embedding a server side generated token to all the pages that is generated. When rails render a new page, it will generate an authenticity token and will embed the same into a hidden field and will be stored in the session object. Whenever a request to Edit or Update an object is received rails will check the authenticity of the token and will reject it if it isnt valid.
